@@ -56,7 +56,7 @@ func GetConn() (*mongo.Client, error) {
 
 func init() {
 
-	viper.AddConfigPath(".")
+	viper.AddConfigPath("./cfg")
 	viper.SetConfigName("config")
 	viper.SetConfigType("yaml")
 
