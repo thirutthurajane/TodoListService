@@ -29,6 +29,7 @@ func Setup(router *chi.Mux) {
 
 		router.Route("/api/todos", func(r chi.Router) {
 			r.Get("/", controller.GetAllTodos)
+			r.Get("/{id}", controller.GetTodo)
 		})
 	})
 
